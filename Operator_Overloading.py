@@ -8,10 +8,15 @@ class Student:
     
     def __add__(self, other):
         return Student(self.m1+other.m1, self.m2+other.m2)
+    
+    def __sub__(self, other):
+        return Student(self.m1-other.m1, self.m2-other.m2)
+
 
 s1 = Student(60, 70)
 s2 = Student(50, 70)
 
 s3 = s1 + s2
-print(s3)
+s4 = s1 - s2
+print(s3,s4)
 
